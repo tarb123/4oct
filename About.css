@@ -1,0 +1,190 @@
+/* New section with background image */
+.about-section {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    padding: 60px 0px 0px;
+    color: white;
+    position: relative;
+}
+
+/* Full overlay on the background image */
+.overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 50px;
+    border-radius: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ /* Buttons section */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.one-btn {
+    background-color: cyan;
+    color: rgb(0, 0, 0);
+}
+
+.one-btn:hover {
+    background-color: #0dc3c9; /* Darker blue on hover */
+}
+
+.two-btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+ }
+
+.two-btn:hover {
+    background-color: #0dc3c9;
+    border: 1px solid cyan;
+    color: white;
+}
+
+/* White text for the 'About Us' heading */
+.about-heading {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white; /* Ensuring 'About Us' text is white */
+}
+
+/* Centered breadcrumb and black icon with cyan background */
+.breadcrumb{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the breadcrumb text */
+}
+
+/* Icon in small cyan circle */
+.breadcrumb .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: cyan; /* Cyan background for icon */
+    color: black; /* Icon color black */
+    margin: 0 10px;
+}
+
+/* Centering and styling the about text */
+.about-text {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centering the about text */
+    color: white; /* White color for text */
+}
+
+  
+.about-us {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 100px;
+    border-radius: 8px;
+}
+
+ul {
+    color: #0a3371;
+    text-align: center;
+}
+
+h1{
+    color: #990000;
+    text-align: center;
+}
+
+p {
+    color: #010101;
+    text-align: left;
+}
+
+.left-ahead {
+    color: #003366;
+    text-align: left;
+}
+
+.service-container {
+    background-color: rgb(252, 252, 252);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.service-box {
+    background-color: #e6f3ff;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 200px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slide-in 2s forwards;
+}
+
+.service-box h2 {
+    color: #9b0000;
+    margin-bottom: 10px;
+}
+
+.service-box p {
+    color: black;
+    font-size: 14px;
+}
+
+/* Slider Animation */
+@keyframes slide-in {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Adding delay for each service-box to appear one by one */
+.service-box:nth-child(1) {
+    animation-delay: 0s; /* No delay for the first box */
+}
+
+.service-box:nth-child(2) {
+    animation-delay: 1s; /* 2 seconds delay for the second box */
+}
+
+.service-box:nth-child(3) {
+    animation-delay: 2s; /* 4 seconds delay for the third box */
+}
+
+.service-box:nth-child(4) {
+    animation-delay: 3s; /* 6 seconds delay for the fourth box */
+}
+
+.service-box:nth-child(5) {
+    animation-delay: 4s; /* 8 seconds delay for the fifth box */
+}

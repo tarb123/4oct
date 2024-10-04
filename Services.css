@@ -1,0 +1,54 @@
+/* Services.css */
+.client-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: -10px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+h1{
+  color: #990000;
+  text-align: center;
+}
+
+p {
+  color: #010101;
+  text-align: center;
+}
+.client-logo img {
+  width: 100px; /* Adjust as per your desired width */
+  object-fit: contain; /* Ensures the aspect ratio is maintained */
+  mix-blend-mode: color-burn;
+  height: 200px; /* Adjust as per your desired height */
+  padding: -10px;
+  background-color: transparent; /* Optional: Adds a background color behind the logos */
+}
+
+.slider-arrow {
+  color: #c63939; /* Arrow color */
+  cursor: pointer;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.slick-prev{
+  left: 50px; /* Adjust as per design */
+}
+
+.slick-next {
+  right: 50px; /* Adjust as per design */
+}
+
+/* Apply green hover effect */
+.slick-prev:hover, .slick-next:hover {
+  background-color: green; /* Green hover color */
+}

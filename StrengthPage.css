@@ -1,0 +1,185 @@
+/* Main section container */
+.strength-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #0a3371; /* Dark background similar to the image */
+    color: white;
+}
+
+/* Left content (text and services) */
+.left-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.left-content p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Service cards section */
+.service-cards {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.card {
+    background-color: #0a3371;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    flex: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px); /* Slight lift effect */
+}
+
+/* Icon animation - sliding in from left */
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Icon box with animated entry */
+.icon-box {
+    background-color: transparent; /* Teal color for the icons background */
+    height: 80px;
+    margin-bottom: 40px;
+    padding: 60px;
+    animation: slideInFromLeft 1s ease-out; /* Animation applied */
+}
+
+.icon-box img {
+    width: 150px; /* Set icon size */
+    height: 130px;
+}
+
+/* Headings inside cards */
+.card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Text inside cards */
+.card p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/* Buttons section */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.start-btn {
+    background-color: #007bff;
+    color: white;
+}
+
+.start-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.job-list-btn {
+    background-color: transparent;
+    color: #007bff;
+    border: 1px solid #007bff;
+}
+
+.job-list-btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Right content (image and statistics) */
+.right-content {
+    flex: 1;
+    text-align: right;
+}
+
+.consultation-image {
+    border: 1px solid #cce6ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(216, 224, 231, 0.1);
+}
+
+/* Statistics section */
+.stats {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat {
+    background-color: transparent;
+    border-radius: 10px;
+    text-align: center;
+    width: 180px; /* Width for each statistic */
+}
+
+.stat h2 {
+    font-size: 16px;
+    width: 100px;
+    height: 10px;
+    color: #00d1b2;
+}
+
+.stat p {
+    font-size: 16px;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .strength-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .right-content {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stats vertically on smaller screens */
+        align-items: center; /* Center align */
+    }
+}

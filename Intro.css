@@ -1,0 +1,100 @@
+/* New section with background image */
+.into-section {
+    height: 100px;
+    width: 50px;
+    background-position: center;
+    height: 800px;
+    width:1200px;
+    padding: 60px 0px 0px;
+    color: white;
+    position: relative;
+}
+
+/* Full overlay on the background image */
+.intro-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 100px;
+    border-radius: 1px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ /* Buttons section */
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.one-btn {
+    background-color: cyan;
+    color: rgb(0, 0, 0);
+}
+
+.one-btn:hover {
+    background-color: #0dc3c9; /* Darker blue on hover */
+}
+
+.two-btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+ }
+
+.two-btn:hover {
+    background-color: #0dc3c9;
+    border: 1px solid cyan;
+    color: white;
+}
+
+/* White text for the 'About Us' heading */
+.intro-heading {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white; /* Ensuring 'About Us' text is white */
+}
+
+/* Centered breadcrumb and black icon with cyan background */
+.breadcrumb{
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the breadcrumb text */
+}
+
+/* Icon in small cyan circle */
+.breadcrumb .icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: cyan; /* Cyan background for icon */
+    color: black; /* Icon color black */
+    margin: 0 10px;
+}
+
+/* Centering and styling the about text */
+.intro-text {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; /* Centering the about text */
+    color: white; /* White color for text */
+}
